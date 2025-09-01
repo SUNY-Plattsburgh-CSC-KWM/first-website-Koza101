@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <title>Hello World Website</title>
     <script>
-        function function-name() {
+        function swapName() {
             // >>> put a prompt here, ask the user for a new name <<< 
             // Use document.getElementById("your id").textContent = .... to change the level 1 header to say something new
+            const name = document.getElementById("nameInput").value.trim();
+            const greeting = document.getElementById("greeting");
+
+            if (name) {
+                greeting.textContent = "Hello " + name + "!";
+            } else {
+                greeting.textContent = "Hello World!";
+            }
         }
     </script>
 </head>
 <body>
-    <h1 id="your-id-here">Hello, World!</h1>
-    <button onclick="function-name()">label-on-button</button>
+    <h1 id="greeting">Hello, World!</h1>
+    <input type="text" id="nameInput" placeholder="Enter a name">
+    <button onclick="swapName()">Swap Name</button>
 </body>
 </html>
