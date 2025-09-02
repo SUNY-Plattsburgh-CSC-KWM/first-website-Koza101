@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World Website</title>
+    <title>Simple Calculator Exercise</title>
+
         {# Importing Javascript file #}
-    <script src="swapName.js"></script>
+        <script src="simpleCalc.js"></script>
 
 </head>
+
 <body>
-    <h1 id="greeting">Hello, World!</h1>
-    <input type="text" id="nameInput" placeholder="Enter a name">
-    <button onclick="swapName()">Swap Name</button>
+    <h1 id="greeting">Simple Calculator Exercise</h1>
+    <input input type="number" id="simpleCalcX" placeholder="Enter x:">
+    <br></br>
+    <input input type="number" id="simpleCalcY" placeholder="Enter y:">
+    <br></br>
+    <input input type="text" id="simpleCalcOp" placeholder="Enter Operator">
+    <br></br>
+    <button onclick="simpleCalc()">Calculate</button>
+    <input type="reset" value="reset">
+
+    
 </body>
 </html>
